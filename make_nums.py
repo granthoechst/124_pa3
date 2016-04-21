@@ -1,8 +1,7 @@
 import numpy as np
 import sys
 
-# usage: python gen_numbers.py n
-# creates nums.txt with appropriate numbers
+# usage: python make_nums.py n
 
 def gen_numbers():
     for i in range(0,100):
