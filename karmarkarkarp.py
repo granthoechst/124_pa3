@@ -17,8 +17,7 @@ for line in input_numbers:
 
 kk_nums = nums
 
-# beginning the repeated random:
-
+# begin RANDOM repeated random--------------------------------------------------
 def gen_plus_min():
     plus_min_list = []
     for i in range(0,100):
@@ -40,8 +39,36 @@ def rep_rand(numbers):
             total = abs(temp_total)
     return total
 
-print "The repeated random low is: %i." % rep_rand(nums)
+print "The RANDOM repeated random value is: %i." % rep_rand(nums)
+# end RANDOM repeated random ---------------------------------------------------
 
+
+# begin PP repeated random------------------------------------------------------
+
+# end PP repeated random--------------------------------------------------------
+
+
+# begin RANDOM hill climbing----------------------------------------------------
+
+# end RANDOM hill climbing------------------------------------------------------
+
+
+# begin PP hill climbing--------------------------------------------------------
+
+# end PP hill climbing----------------------------------------------------------
+
+
+# begin RANDOM simulated annealing----------------------------------------------
+
+# end RANDOM simulated annealing------------------------------------------------
+
+
+# begin PP simulated annealing--------------------------------------------------
+
+# end PP simulated annealing----------------------------------------------------
+
+
+# begin karmarkar karp----------------------------------------------------------
 heapq.heapify(kk_nums)
 
 def karmarkar_karp(heap):
@@ -52,5 +79,6 @@ def karmarkar_karp(heap):
 	return heap[0]
 
 
-print(-karmarkar_karp(kk_nums))
+print ("The Karmarkar Karp value is: %i") % -karmarkar_karp(kk_nums)
+# end karmarkar karp------------------------------------------------------------
 
