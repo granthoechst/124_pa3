@@ -20,7 +20,7 @@ kk_nums = nums
 def gen_plus_min():
     plus_min_list = []
     for i in range(0,100):
-        x = np.random.random_integers(0,2)
+        x = np.random.random_integers(0,1)
         if x == 0:
             plus_min_list.append(-1)
         else:
@@ -50,17 +50,19 @@ print "The RANDOM repeated random value is: %i." % rep_rand(nums)
 
 # begin RANDOM hill climbing----------------------------------------------------
 def rep_rand_hc(numbers):
-    plus_min = gen_plus_min()
+    plus_min_hc = gen_plus_min()
     total = sys.maxint
-    for j in range(0,5):
+    for j in range(0,100):
         temp_total = 0
         for i in range(0,100):
-            temp_total += (plus_min[i] + numbers[i])
+            temp_total += (plus_min_hc[i] + numbers[i])
         if(abs(temp_total) < total):
             total = abs(temp_total)
+        switch = np.random.random_integers(0,99)
+        plus_min_hc[switch] = -1 * plus_min_hc[switch]
     return total
 
-print "The RANDOM repeated hill climbing value (not finished) is: %i." % rep_rand_hc(nums)
+print "The RANDOM hill climbing value (not finished) is: %i." % rep_rand_hc(nums)
 # end RANDOM hill climbing------------------------------------------------------
 
 

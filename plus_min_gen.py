@@ -6,7 +6,7 @@ import sys
 def gen_plus_min():
     plus_min_list = []
     for i in range(0,100):
-        x = np.random.random_integers(0,2)
+        x = np.random.random_integers(0,1)
         if x == 0:
             plus_min_list.append(-1)
         else:
