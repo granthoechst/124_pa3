@@ -17,7 +17,6 @@ for line in input_numbers:
 
 kk_nums = nums
 
-# begin RANDOM repeated random--------------------------------------------------
 def gen_plus_min():
     plus_min_list = []
     for i in range(0,100):
@@ -28,6 +27,7 @@ def gen_plus_min():
             plus_min_list.append(1)
     return plus_min_list
 
+# begin RANDOM repeated random--------------------------------------------------
 def rep_rand(numbers):
     total = sys.maxint
     for j in range(0, 25000):
@@ -49,7 +49,18 @@ print "The RANDOM repeated random value is: %i." % rep_rand(nums)
 
 
 # begin RANDOM hill climbing----------------------------------------------------
+def rep_rand_hc(numbers):
+    plus_min = gen_plus_min()
+    total = sys.maxint
+    for j in range(0,5):
+        temp_total = 0
+        for i in range(0,100):
+            temp_total += (plus_min[i] + numbers[i])
+        if(abs(temp_total) < total):
+            total = abs(temp_total)
+    return total
 
+print "The RANDOM repeated hill climbing value (not finished) is: %i." % rep_rand_hc(nums)
 # end RANDOM hill climbing------------------------------------------------------
 
 
