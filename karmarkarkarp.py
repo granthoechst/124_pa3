@@ -23,8 +23,5 @@ def karmarkar_karp(heap):
 		heapq.heappush(heap, (largest - sec_largest))
 	return heap[0]
 
-print(nums)
-
-print()
 
 print(-karmarkar_karp(nums))
