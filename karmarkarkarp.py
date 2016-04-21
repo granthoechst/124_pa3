@@ -14,7 +14,9 @@ for line in input_numbers:
 	for number in line.split():
 		nums.append(-int(number))
 
-heapq.heapify(nums)
+let kk_nums = num
+
+heapq.heapify(kk_nums)
 
 def karmarkar_karp(heap):
 	while(len(heap) != 1):
@@ -24,4 +26,4 @@ def karmarkar_karp(heap):
 	return heap[0]
 
 
-print(-karmarkar_karp(nums))
+print(-karmarkar_karp(kk_nums))
