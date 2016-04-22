@@ -16,7 +16,7 @@ for line in input_numbers:
 	for number in line.split():
 		nums.append(-int(number))
 
-kk_nums = nums
+kk_nums = list(nums)
 
 def gen_plus_min():
     plus_min_list = []
@@ -28,6 +28,21 @@ def gen_plus_min():
             plus_min_list.append(1)
     return plus_min_list
 
+def gen_pp_arr():
+    pp_arr = []
+    for i in range(0,100):
+        pp_arr.append((i, np.random.random_integers(1,100)))
+    return pp_arr
+
+def apply_pp(pp_arr, numbers):
+    copy_numbers = list(numbers)
+    sorted_pp_arr = sorted(pp_arr, key=lambda x: x[1])
+    for i in range(0,99):
+        if(sorted_pp_arr[i][1] == sorted_pp_arr[i+1][1]):
+            copy_numbers[sorted_pp_arr[i + 1][0]] += copy_numbers[sorted_pp_arr[i][0]]
+            copy_numbers[sorted_pp_arr[i][0]] = 0
+    return copy_numbers
+
 def residue_calc(array, numbers):
     temp_total = 0
     for i in range(0,100):
@@ -37,8 +52,23 @@ def residue_calc(array, numbers):
 def t_iter(n):
     return (10**10)*(0.8)**(n/300)
 
+# begin karmarkar karp----------------------------------------------------------
+# heapq.heapify(kk_nums)
+
+def karmarkar_karp(heap):
+    heapq.heapify(heap)
+    while(len(heap) != 1):
+        largest = heapq.heappop(heap)
+        sec_largest = heapq.heappop(heap)
+        heapq.heappush(heap, (largest - sec_largest))
+    return -heap[0]
+
+
+print ("The Karmarkar Karp value is: %i") % karmarkar_karp(kk_nums)
+# end karmarkar karp------------------------------------------------------------
+
 # begin RANDOM repeated random--------------------------------------------------
-def rep_rand(numbers):
+def rand_rep_rand(numbers):
     total = sys.maxint
     for j in range(0, 25000):
         plus_min = gen_plus_min()
@@ -47,12 +77,20 @@ def rep_rand(numbers):
             total = temp_total
     return total
 
-print "The RANDOM repeated random value is: %i." % rep_rand(nums)
+print "The RANDOM repeated random value is: %i." % rand_rep_rand(nums)
 # end RANDOM repeated random ---------------------------------------------------
 
 
 # begin PP repeated random------------------------------------------------------
+def pp_rep_rand(numbers):
+    total = sys.maxint
+    for j in range(0, 25000):
+        temp_total = karmarkar_karp(apply_pp(gen_pp_arr(), numbers))
+        if(temp_total < total):
+            total = temp_total
+    return total
 
+print "The PP repeated random value is: %i." % pp_rep_rand(nums)
 # end PP repeated random--------------------------------------------------------
 
 
@@ -63,7 +101,7 @@ def rand_hc(numbers):
     for j in range(0,25000):
         switch1 = np.random.random_integers(0,99)
         switch2 = np.random.random_integers(0,99)
-        temp_plus_min = plus_min_hc
+        temp_plus_min = list(plus_min_hc)
         temp_plus_min[switch1] = -1 * temp_plus_min[switch1]
         if (np.random.random_integers(0,1) == 0):
             temp_plus_min[switch2] = -1 * temp_plus_min[switch2]
@@ -89,7 +127,7 @@ def rand_sa(numbers):
     for j in range(0,25000):
         switch1 = np.random.random_integers(0,99)
         switch2 = np.random.random_integers(0,99)
-        temp_plus_min = plus_min_sa
+        temp_plus_min = list(plus_min_sa)
         temp_plus_min[switch1] = -1 * temp_plus_min[switch1]
         if (np.random.random_integers(0,1) == 0):
             temp_plus_min[switch2] = -1 * temp_plus_min[switch2]
@@ -107,18 +145,4 @@ print "The RANDOM simulated annealing value is: %i." % rand_sa(nums)
 
 # end PP simulated annealing----------------------------------------------------
 
-
-# begin karmarkar karp----------------------------------------------------------
-heapq.heapify(kk_nums)
-
-def karmarkar_karp(heap):
-	while(len(heap) != 1):
-		largest = heapq.heappop(heap)
-		sec_largest = heapq.heappop(heap)
-		heapq.heappush(heap, (largest - sec_largest))
-	return heap[0]
-
-
-print ("The Karmarkar Karp value is: %i") % -karmarkar_karp(kk_nums)
-# end karmarkar karp------------------------------------------------------------
 
