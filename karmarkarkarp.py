@@ -27,16 +27,20 @@ def gen_plus_min():
             plus_min_list.append(1)
     return plus_min_list
 
+def residue_calc(array, numbers):
+    temp_total = 0
+    for i in range(0,100):
+            temp_total += (array[i] * numbers[i])
+    return abs(temp_total)
+
 # begin RANDOM repeated random--------------------------------------------------
 def rep_rand(numbers):
     total = sys.maxint
     for j in range(0, 25000):
-        temp_total = 0
         plus_min = gen_plus_min()
-        for i in range(0,100):
-            temp_total += (plus_min[i] * numbers[i])
-        if(abs(temp_total) < total):
-            total = abs(temp_total)
+        temp_total = residue_calc(plus_min, numbers)
+        if(temp_total < total):
+            total = temp_total
     return total
 
 print "The RANDOM repeated random value is: %i." % rep_rand(nums)
@@ -49,20 +53,23 @@ print "The RANDOM repeated random value is: %i." % rep_rand(nums)
 
 
 # begin RANDOM hill climbing----------------------------------------------------
-def rep_rand_hc(numbers):
+def rand_hc(numbers):
     plus_min_hc = gen_plus_min()
-    total = sys.maxint
-    for j in range(0,100):
-        temp_total = 0
-        for i in range(0,100):
-            temp_total += (plus_min_hc[i] + numbers[i])
-        if(abs(temp_total) < total):
-            total = abs(temp_total)
-        switch = np.random.random_integers(0,99)
-        plus_min_hc[switch] = -1 * plus_min_hc[switch]
-    return total
+    total_hc = residue_calc(plus_min_hc, numbers)
+    for j in range(0,25000):
+        switch1 = np.random.random_integers(0,99)
+        switch2 = np.random.random_integers(0,99)
+        temp_plus_min = plus_min_hc
+        temp_plus_min[switch1] = -1 * temp_plus_min[switch1]
+        if (np.random.random_integers(0,1) == 0):
+            temp_plus_min[switch2] = -1 * temp_plus_min[switch2]
+        temp_res = residue_calc(temp_plus_min, numbers)
+        if (temp_res < total_hc):
+            total_hc = temp_res
+            plus_min_hc = temp_plus_min
+    return total_hc
 
-print "The RANDOM hill climbing value (not finished) is: %i." % rep_rand_hc(nums)
+print "The RANDOM hill climbing value is: %i." % rand_hc(nums)
 # end RANDOM hill climbing------------------------------------------------------
 
 
