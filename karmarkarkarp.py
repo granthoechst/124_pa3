@@ -2,6 +2,7 @@ import math
 import heapq
 import sys
 import numpy as np
+import random
 
 if (len(sys.argv) != 2):
 	print("Usage: python karmarkarkarp.py [INPUT FILE]")
@@ -32,6 +33,9 @@ def residue_calc(array, numbers):
     for i in range(0,100):
             temp_total += (array[i] * numbers[i])
     return abs(temp_total)
+
+def t_iter(n):
+    return (10**10)*(0.8)**(n/300)
 
 # begin RANDOM repeated random--------------------------------------------------
 def rep_rand(numbers):
@@ -79,7 +83,23 @@ print "The RANDOM hill climbing value is: %i." % rand_hc(nums)
 
 
 # begin RANDOM simulated annealing----------------------------------------------
+def rand_sa(numbers):
+    plus_min_sa = gen_plus_min()
+    total_sa = residue_calc(plus_min_sa, numbers)
+    for j in range(0,25000):
+        switch1 = np.random.random_integers(0,99)
+        switch2 = np.random.random_integers(0,99)
+        temp_plus_min = plus_min_sa
+        temp_plus_min[switch1] = -1 * temp_plus_min[switch1]
+        if (np.random.random_integers(0,1) == 0):
+            temp_plus_min[switch2] = -1 * temp_plus_min[switch2]
+        temp_res = residue_calc(temp_plus_min, numbers)
+        if (temp_res < total_sa or random.random() < (math.exp(-((temp_res-total_sa)/t_iter(j))))):
+            total_sa = temp_res
+            plus_min_sa = temp_plus_min
+    return total_sa
 
+print "The RANDOM simulated annealing value is: %i." % rand_sa(nums)
 # end RANDOM simulated annealing------------------------------------------------
 
 
