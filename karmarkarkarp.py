@@ -116,7 +116,23 @@ print "The RANDOM hill climbing value is: %i." % rand_hc(nums)
 
 
 # begin PP hill climbing--------------------------------------------------------
+def pp_hc(numbers):
+    curr_pp_arr = gen_pp_arr()
+    curr_hc = karmarkar_karp(apply_pp(curr_pp_arr, numbers))
+    for j in range(0,25000):
+        switch_index = np.random.random_integers(0,99)
+        temp_pp_arr = list(curr_pp_arr)
+        switch_content = np.random.random_integers(1,100)
+        while (temp_pp_arr[switch_index][1] == switch_content):
+            switch_content = np.random.random_integers(1,100)
+        temp_pp_arr[switch_index] = (switch_index, switch_content)
+        temp_hc = karmarkar_karp(apply_pp(temp_pp_arr, numbers))
+        if (temp_hc < curr_hc):
+            curr_hc = temp_hc
+            curr_pp_arr = temp_pp_arr
+    return curr_hc
 
+print "The PP hill climbing value is: %i." % pp_hc(nums)
 # end PP hill climbing----------------------------------------------------------
 
 
