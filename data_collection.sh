@@ -1,201 +1,453 @@
 #!/bin/bash
-echo "kk 1:"
+TIMEFORMAT=%R
+
 python make_nums.py > nums.txt
-python karmarkarkarp.py nums.txt
-echo "--"
-echo "kk 2:"
+(time python karmarkarkarp.py nums.txt) > kk_data.txt 2>&1
+(time python r_rr.py nums.txt) > r_rr_data.txt 2>&1
+(time python r_hc.py nums.txt) > r_hc_data.txt 2>&1
+(time python r_sa.py nums.txt) > r_sa_data.txt 2>&1
+(time python pp_rr.py nums.txt) > pp_rr_data.txt 2>&1
+(time python pp_hc.py nums.txt) > pp_hc_data.txt 2>&1
+(time python pp_sa.py nums.txt) > pp_sa_data.txt 2>&1
+
 python make_nums.py > nums.txt
-python karmarkarkarp.py nums.txt
-echo "--"
-echo "kk 3:"
+(time python karmarkarkarp.py nums.txt) > kk_data.txt 2>&1
+(time python r_rr.py nums.txt) > r_rr_data.txt 2>&1
+(time python r_hc.py nums.txt) > r_hc_data.txt 2>&1
+(time python r_sa.py nums.txt) > r_sa_data.txt 2>&1
+(time python pp_rr.py nums.txt) > pp_rr_data.txt 2>&1
+(time python pp_hc.py nums.txt) > pp_hc_data.txt 2>&1
+(time python pp_sa.py nums.txt) > pp_sa_data.txt 2>&1
+
 python make_nums.py > nums.txt
-python karmarkarkarp.py nums.txt
-echo "--"
-echo "kk 4:"
+(time python karmarkarkarp.py nums.txt) > kk_data.txt 2>&1
+(time python r_rr.py nums.txt) > r_rr_data.txt 2>&1
+(time python r_hc.py nums.txt) > r_hc_data.txt 2>&1
+(time python r_sa.py nums.txt) > r_sa_data.txt 2>&1
+(time python pp_rr.py nums.txt) > pp_rr_data.txt 2>&1
+(time python pp_hc.py nums.txt) > pp_hc_data.txt 2>&1
+(time python pp_sa.py nums.txt) > pp_sa_data.txt 2>&1
+
 python make_nums.py > nums.txt
-python karmarkarkarp.py nums.txt
-echo "--"
-echo "kk 5:"
+(time python karmarkarkarp.py nums.txt) > kk_data.txt 2>&1
+(time python r_rr.py nums.txt) > r_rr_data.txt 2>&1
+(time python r_hc.py nums.txt) > r_hc_data.txt 2>&1
+(time python r_sa.py nums.txt) > r_sa_data.txt 2>&1
+(time python pp_rr.py nums.txt) > pp_rr_data.txt 2>&1
+(time python pp_hc.py nums.txt) > pp_hc_data.txt 2>&1
+(time python pp_sa.py nums.txt) > pp_sa_data.txt 2>&1
+
 python make_nums.py > nums.txt
-python karmarkarkarp.py nums.txt
-echo "--"
-echo "kk 6:"
+(time python karmarkarkarp.py nums.txt) > kk_data.txt 2>&1
+(time python r_rr.py nums.txt) > r_rr_data.txt 2>&1
+(time python r_hc.py nums.txt) > r_hc_data.txt 2>&1
+(time python r_sa.py nums.txt) > r_sa_data.txt 2>&1
+(time python pp_rr.py nums.txt) > pp_rr_data.txt 2>&1
+(time python pp_hc.py nums.txt) > pp_hc_data.txt 2>&1
+(time python pp_sa.py nums.txt) > pp_sa_data.txt 2>&1
+
 python make_nums.py > nums.txt
-python karmarkarkarp.py nums.txt
-echo "--"
-echo "kk 7:"
+(time python karmarkarkarp.py nums.txt) > kk_data.txt 2>&1
+(time python r_rr.py nums.txt) > r_rr_data.txt 2>&1
+(time python r_hc.py nums.txt) > r_hc_data.txt 2>&1
+(time python r_sa.py nums.txt) > r_sa_data.txt 2>&1
+(time python pp_rr.py nums.txt) > pp_rr_data.txt 2>&1
+(time python pp_hc.py nums.txt) > pp_hc_data.txt 2>&1
+(time python pp_sa.py nums.txt) > pp_sa_data.txt 2>&1
+
 python make_nums.py > nums.txt
-python karmarkarkarp.py nums.txt
-echo "--"
-echo "kk 8:"
+(time python karmarkarkarp.py nums.txt) > kk_data.txt 2>&1
+(time python r_rr.py nums.txt) > r_rr_data.txt 2>&1
+(time python r_hc.py nums.txt) > r_hc_data.txt 2>&1
+(time python r_sa.py nums.txt) > r_sa_data.txt 2>&1
+(time python pp_rr.py nums.txt) > pp_rr_data.txt 2>&1
+(time python pp_hc.py nums.txt) > pp_hc_data.txt 2>&1
+(time python pp_sa.py nums.txt) > pp_sa_data.txt 2>&1
+
 python make_nums.py > nums.txt
-python karmarkarkarp.py nums.txt
-echo "--"
-echo "kk 9:"
+(time python karmarkarkarp.py nums.txt) > kk_data.txt 2>&1
+(time python r_rr.py nums.txt) > r_rr_data.txt 2>&1
+(time python r_hc.py nums.txt) > r_hc_data.txt 2>&1
+(time python r_sa.py nums.txt) > r_sa_data.txt 2>&1
+(time python pp_rr.py nums.txt) > pp_rr_data.txt 2>&1
+(time python pp_hc.py nums.txt) > pp_hc_data.txt 2>&1
+(time python pp_sa.py nums.txt) > pp_sa_data.txt 2>&1
+
 python make_nums.py > nums.txt
-python karmarkarkarp.py nums.txt
-echo "--"
-echo "kk 10:"
+(time python karmarkarkarp.py nums.txt) > kk_data.txt 2>&1
+(time python r_rr.py nums.txt) > r_rr_data.txt 2>&1
+(time python r_hc.py nums.txt) > r_hc_data.txt 2>&1
+(time python r_sa.py nums.txt) > r_sa_data.txt 2>&1
+(time python pp_rr.py nums.txt) > pp_rr_data.txt 2>&1
+(time python pp_hc.py nums.txt) > pp_hc_data.txt 2>&1
+(time python pp_sa.py nums.txt) > pp_sa_data.txt 2>&1
+
 python make_nums.py > nums.txt
-python karmarkarkarp.py nums.txt
-echo "--"
-echo "kk 11:"
+(time python karmarkarkarp.py nums.txt) > kk_data.txt 2>&1
+(time python r_rr.py nums.txt) > r_rr_data.txt 2>&1
+(time python r_hc.py nums.txt) > r_hc_data.txt 2>&1
+(time python r_sa.py nums.txt) > r_sa_data.txt 2>&1
+(time python pp_rr.py nums.txt) > pp_rr_data.txt 2>&1
+(time python pp_hc.py nums.txt) > pp_hc_data.txt 2>&1
+(time python pp_sa.py nums.txt) > pp_sa_data.txt 2>&1
+
 python make_nums.py > nums.txt
-python karmarkarkarp.py nums.txt
-echo "--"
-echo "kk 12:"
+(time python karmarkarkarp.py nums.txt) > kk_data.txt 2>&1
+(time python r_rr.py nums.txt) > r_rr_data.txt 2>&1
+(time python r_hc.py nums.txt) > r_hc_data.txt 2>&1
+(time python r_sa.py nums.txt) > r_sa_data.txt 2>&1
+(time python pp_rr.py nums.txt) > pp_rr_data.txt 2>&1
+(time python pp_hc.py nums.txt) > pp_hc_data.txt 2>&1
+(time python pp_sa.py nums.txt) > pp_sa_data.txt 2>&1
+
 python make_nums.py > nums.txt
-python karmarkarkarp.py nums.txt
-echo "--"
-echo "kk 13:"
+(time python karmarkarkarp.py nums.txt) > kk_data.txt 2>&1
+(time python r_rr.py nums.txt) > r_rr_data.txt 2>&1
+(time python r_hc.py nums.txt) > r_hc_data.txt 2>&1
+(time python r_sa.py nums.txt) > r_sa_data.txt 2>&1
+(time python pp_rr.py nums.txt) > pp_rr_data.txt 2>&1
+(time python pp_hc.py nums.txt) > pp_hc_data.txt 2>&1
+(time python pp_sa.py nums.txt) > pp_sa_data.txt 2>&1
+
 python make_nums.py > nums.txt
-python karmarkarkarp.py nums.txt
-echo "--"
-echo "kk 14:"
+(time python karmarkarkarp.py nums.txt) > kk_data.txt 2>&1
+(time python r_rr.py nums.txt) > r_rr_data.txt 2>&1
+(time python r_hc.py nums.txt) > r_hc_data.txt 2>&1
+(time python r_sa.py nums.txt) > r_sa_data.txt 2>&1
+(time python pp_rr.py nums.txt) > pp_rr_data.txt 2>&1
+(time python pp_hc.py nums.txt) > pp_hc_data.txt 2>&1
+(time python pp_sa.py nums.txt) > pp_sa_data.txt 2>&1
+
 python make_nums.py > nums.txt
-python karmarkarkarp.py nums.txt
-echo "--"
-echo "kk 15:"
+(time python karmarkarkarp.py nums.txt) > kk_data.txt 2>&1
+(time python r_rr.py nums.txt) > r_rr_data.txt 2>&1
+(time python r_hc.py nums.txt) > r_hc_data.txt 2>&1
+(time python r_sa.py nums.txt) > r_sa_data.txt 2>&1
+(time python pp_rr.py nums.txt) > pp_rr_data.txt 2>&1
+(time python pp_hc.py nums.txt) > pp_hc_data.txt 2>&1
+(time python pp_sa.py nums.txt) > pp_sa_data.txt 2>&1
+
 python make_nums.py > nums.txt
-python karmarkarkarp.py nums.txt
-echo "--"
-echo "kk 16:"
+(time python karmarkarkarp.py nums.txt) > kk_data.txt 2>&1
+(time python r_rr.py nums.txt) > r_rr_data.txt 2>&1
+(time python r_hc.py nums.txt) > r_hc_data.txt 2>&1
+(time python r_sa.py nums.txt) > r_sa_data.txt 2>&1
+(time python pp_rr.py nums.txt) > pp_rr_data.txt 2>&1
+(time python pp_hc.py nums.txt) > pp_hc_data.txt 2>&1
+(time python pp_sa.py nums.txt) > pp_sa_data.txt 2>&1
+
 python make_nums.py > nums.txt
-python karmarkarkarp.py nums.txt
-echo "--"
-echo "kk 17:"
+(time python karmarkarkarp.py nums.txt) > kk_data.txt 2>&1
+(time python r_rr.py nums.txt) > r_rr_data.txt 2>&1
+(time python r_hc.py nums.txt) > r_hc_data.txt 2>&1
+(time python r_sa.py nums.txt) > r_sa_data.txt 2>&1
+(time python pp_rr.py nums.txt) > pp_rr_data.txt 2>&1
+(time python pp_hc.py nums.txt) > pp_hc_data.txt 2>&1
+(time python pp_sa.py nums.txt) > pp_sa_data.txt 2>&1
+
 python make_nums.py > nums.txt
-python karmarkarkarp.py nums.txt
-echo "--"
-echo "kk 18:"
+(time python karmarkarkarp.py nums.txt) > kk_data.txt 2>&1
+(time python r_rr.py nums.txt) > r_rr_data.txt 2>&1
+(time python r_hc.py nums.txt) > r_hc_data.txt 2>&1
+(time python r_sa.py nums.txt) > r_sa_data.txt 2>&1
+(time python pp_rr.py nums.txt) > pp_rr_data.txt 2>&1
+(time python pp_hc.py nums.txt) > pp_hc_data.txt 2>&1
+(time python pp_sa.py nums.txt) > pp_sa_data.txt 2>&1
+
 python make_nums.py > nums.txt
-python karmarkarkarp.py nums.txt
-echo "--"
-echo "kk 19:"
+(time python karmarkarkarp.py nums.txt) > kk_data.txt 2>&1
+(time python r_rr.py nums.txt) > r_rr_data.txt 2>&1
+(time python r_hc.py nums.txt) > r_hc_data.txt 2>&1
+(time python r_sa.py nums.txt) > r_sa_data.txt 2>&1
+(time python pp_rr.py nums.txt) > pp_rr_data.txt 2>&1
+(time python pp_hc.py nums.txt) > pp_hc_data.txt 2>&1
+(time python pp_sa.py nums.txt) > pp_sa_data.txt 2>&1
+
 python make_nums.py > nums.txt
-python karmarkarkarp.py nums.txt
-echo "--"
-echo "kk 20:"
+(time python karmarkarkarp.py nums.txt) > kk_data.txt 2>&1
+(time python r_rr.py nums.txt) > r_rr_data.txt 2>&1
+(time python r_hc.py nums.txt) > r_hc_data.txt 2>&1
+(time python r_sa.py nums.txt) > r_sa_data.txt 2>&1
+(time python pp_rr.py nums.txt) > pp_rr_data.txt 2>&1
+(time python pp_hc.py nums.txt) > pp_hc_data.txt 2>&1
+(time python pp_sa.py nums.txt) > pp_sa_data.txt 2>&1
+
 python make_nums.py > nums.txt
-python karmarkarkarp.py nums.txt
-echo "--"
-echo "kk 21:"
+(time python karmarkarkarp.py nums.txt) > kk_data.txt 2>&1
+(time python r_rr.py nums.txt) > r_rr_data.txt 2>&1
+(time python r_hc.py nums.txt) > r_hc_data.txt 2>&1
+(time python r_sa.py nums.txt) > r_sa_data.txt 2>&1
+(time python pp_rr.py nums.txt) > pp_rr_data.txt 2>&1
+(time python pp_hc.py nums.txt) > pp_hc_data.txt 2>&1
+(time python pp_sa.py nums.txt) > pp_sa_data.txt 2>&1
+
 python make_nums.py > nums.txt
-python karmarkarkarp.py nums.txt
-echo "--"
-echo "kk 22:"
+(time python karmarkarkarp.py nums.txt) > kk_data.txt 2>&1
+(time python r_rr.py nums.txt) > r_rr_data.txt 2>&1
+(time python r_hc.py nums.txt) > r_hc_data.txt 2>&1
+(time python r_sa.py nums.txt) > r_sa_data.txt 2>&1
+(time python pp_rr.py nums.txt) > pp_rr_data.txt 2>&1
+(time python pp_hc.py nums.txt) > pp_hc_data.txt 2>&1
+(time python pp_sa.py nums.txt) > pp_sa_data.txt 2>&1
+
 python make_nums.py > nums.txt
-python karmarkarkarp.py nums.txt
-echo "--"
-echo "kk 23:"
+(time python karmarkarkarp.py nums.txt) > kk_data.txt 2>&1
+(time python r_rr.py nums.txt) > r_rr_data.txt 2>&1
+(time python r_hc.py nums.txt) > r_hc_data.txt 2>&1
+(time python r_sa.py nums.txt) > r_sa_data.txt 2>&1
+(time python pp_rr.py nums.txt) > pp_rr_data.txt 2>&1
+(time python pp_hc.py nums.txt) > pp_hc_data.txt 2>&1
+(time python pp_sa.py nums.txt) > pp_sa_data.txt 2>&1
+
 python make_nums.py > nums.txt
-python karmarkarkarp.py nums.txt
-echo "--"
-echo "kk 24:"
+(time python karmarkarkarp.py nums.txt) > kk_data.txt 2>&1
+(time python r_rr.py nums.txt) > r_rr_data.txt 2>&1
+(time python r_hc.py nums.txt) > r_hc_data.txt 2>&1
+(time python r_sa.py nums.txt) > r_sa_data.txt 2>&1
+(time python pp_rr.py nums.txt) > pp_rr_data.txt 2>&1
+(time python pp_hc.py nums.txt) > pp_hc_data.txt 2>&1
+(time python pp_sa.py nums.txt) > pp_sa_data.txt 2>&1
+
 python make_nums.py > nums.txt
-python karmarkarkarp.py nums.txt
-echo "--"
-echo "kk 25:"
+(time python karmarkarkarp.py nums.txt) > kk_data.txt 2>&1
+(time python r_rr.py nums.txt) > r_rr_data.txt 2>&1
+(time python r_hc.py nums.txt) > r_hc_data.txt 2>&1
+(time python r_sa.py nums.txt) > r_sa_data.txt 2>&1
+(time python pp_rr.py nums.txt) > pp_rr_data.txt 2>&1
+(time python pp_hc.py nums.txt) > pp_hc_data.txt 2>&1
+(time python pp_sa.py nums.txt) > pp_sa_data.txt 2>&1
+
 python make_nums.py > nums.txt
-python karmarkarkarp.py nums.txt
-echo "--"
-echo "kk 26:"
+(time python karmarkarkarp.py nums.txt) > kk_data.txt 2>&1
+(time python r_rr.py nums.txt) > r_rr_data.txt 2>&1
+(time python r_hc.py nums.txt) > r_hc_data.txt 2>&1
+(time python r_sa.py nums.txt) > r_sa_data.txt 2>&1
+(time python pp_rr.py nums.txt) > pp_rr_data.txt 2>&1
+(time python pp_hc.py nums.txt) > pp_hc_data.txt 2>&1
+(time python pp_sa.py nums.txt) > pp_sa_data.txt 2>&1
+
 python make_nums.py > nums.txt
-python karmarkarkarp.py nums.txt
-echo "--"
-echo "kk 27:"
+(time python karmarkarkarp.py nums.txt) > kk_data.txt 2>&1
+(time python r_rr.py nums.txt) > r_rr_data.txt 2>&1
+(time python r_hc.py nums.txt) > r_hc_data.txt 2>&1
+(time python r_sa.py nums.txt) > r_sa_data.txt 2>&1
+(time python pp_rr.py nums.txt) > pp_rr_data.txt 2>&1
+(time python pp_hc.py nums.txt) > pp_hc_data.txt 2>&1
+(time python pp_sa.py nums.txt) > pp_sa_data.txt 2>&1
+
 python make_nums.py > nums.txt
-python karmarkarkarp.py nums.txt
-echo "--"
-echo "kk 28:"
+(time python karmarkarkarp.py nums.txt) > kk_data.txt 2>&1
+(time python r_rr.py nums.txt) > r_rr_data.txt 2>&1
+(time python r_hc.py nums.txt) > r_hc_data.txt 2>&1
+(time python r_sa.py nums.txt) > r_sa_data.txt 2>&1
+(time python pp_rr.py nums.txt) > pp_rr_data.txt 2>&1
+(time python pp_hc.py nums.txt) > pp_hc_data.txt 2>&1
+(time python pp_sa.py nums.txt) > pp_sa_data.txt 2>&1
+
 python make_nums.py > nums.txt
-python karmarkarkarp.py nums.txt
-echo "--"
-echo "kk 29:"
+(time python karmarkarkarp.py nums.txt) > kk_data.txt 2>&1
+(time python r_rr.py nums.txt) > r_rr_data.txt 2>&1
+(time python r_hc.py nums.txt) > r_hc_data.txt 2>&1
+(time python r_sa.py nums.txt) > r_sa_data.txt 2>&1
+(time python pp_rr.py nums.txt) > pp_rr_data.txt 2>&1
+(time python pp_hc.py nums.txt) > pp_hc_data.txt 2>&1
+(time python pp_sa.py nums.txt) > pp_sa_data.txt 2>&1
+
 python make_nums.py > nums.txt
-python karmarkarkarp.py nums.txt
-echo "--"
-echo "kk 30:"
+(time python karmarkarkarp.py nums.txt) > kk_data.txt 2>&1
+(time python r_rr.py nums.txt) > r_rr_data.txt 2>&1
+(time python r_hc.py nums.txt) > r_hc_data.txt 2>&1
+(time python r_sa.py nums.txt) > r_sa_data.txt 2>&1
+(time python pp_rr.py nums.txt) > pp_rr_data.txt 2>&1
+(time python pp_hc.py nums.txt) > pp_hc_data.txt 2>&1
+(time python pp_sa.py nums.txt) > pp_sa_data.txt 2>&1
+
 python make_nums.py > nums.txt
-python karmarkarkarp.py nums.txt
-echo "--"
-echo "kk 31:"
+(time python karmarkarkarp.py nums.txt) > kk_data.txt 2>&1
+(time python r_rr.py nums.txt) > r_rr_data.txt 2>&1
+(time python r_hc.py nums.txt) > r_hc_data.txt 2>&1
+(time python r_sa.py nums.txt) > r_sa_data.txt 2>&1
+(time python pp_rr.py nums.txt) > pp_rr_data.txt 2>&1
+(time python pp_hc.py nums.txt) > pp_hc_data.txt 2>&1
+(time python pp_sa.py nums.txt) > pp_sa_data.txt 2>&1
+
 python make_nums.py > nums.txt
-python karmarkarkarp.py nums.txt
-echo "--"
-echo "kk 32:"
+(time python karmarkarkarp.py nums.txt) > kk_data.txt 2>&1
+(time python r_rr.py nums.txt) > r_rr_data.txt 2>&1
+(time python r_hc.py nums.txt) > r_hc_data.txt 2>&1
+(time python r_sa.py nums.txt) > r_sa_data.txt 2>&1
+(time python pp_rr.py nums.txt) > pp_rr_data.txt 2>&1
+(time python pp_hc.py nums.txt) > pp_hc_data.txt 2>&1
+(time python pp_sa.py nums.txt) > pp_sa_data.txt 2>&1
+
 python make_nums.py > nums.txt
-python karmarkarkarp.py nums.txt
-echo "--"
-echo "kk 33:"
+(time python karmarkarkarp.py nums.txt) > kk_data.txt 2>&1
+(time python r_rr.py nums.txt) > r_rr_data.txt 2>&1
+(time python r_hc.py nums.txt) > r_hc_data.txt 2>&1
+(time python r_sa.py nums.txt) > r_sa_data.txt 2>&1
+(time python pp_rr.py nums.txt) > pp_rr_data.txt 2>&1
+(time python pp_hc.py nums.txt) > pp_hc_data.txt 2>&1
+(time python pp_sa.py nums.txt) > pp_sa_data.txt 2>&1
+
 python make_nums.py > nums.txt
-python karmarkarkarp.py nums.txt
-echo "--"
-echo "kk 34:"
+(time python karmarkarkarp.py nums.txt) > kk_data.txt 2>&1
+(time python r_rr.py nums.txt) > r_rr_data.txt 2>&1
+(time python r_hc.py nums.txt) > r_hc_data.txt 2>&1
+(time python r_sa.py nums.txt) > r_sa_data.txt 2>&1
+(time python pp_rr.py nums.txt) > pp_rr_data.txt 2>&1
+(time python pp_hc.py nums.txt) > pp_hc_data.txt 2>&1
+(time python pp_sa.py nums.txt) > pp_sa_data.txt 2>&1
+
 python make_nums.py > nums.txt
-python karmarkarkarp.py nums.txt
-echo "--"
-echo "kk 35:"
+(time python karmarkarkarp.py nums.txt) > kk_data.txt 2>&1
+(time python r_rr.py nums.txt) > r_rr_data.txt 2>&1
+(time python r_hc.py nums.txt) > r_hc_data.txt 2>&1
+(time python r_sa.py nums.txt) > r_sa_data.txt 2>&1
+(time python pp_rr.py nums.txt) > pp_rr_data.txt 2>&1
+(time python pp_hc.py nums.txt) > pp_hc_data.txt 2>&1
+(time python pp_sa.py nums.txt) > pp_sa_data.txt 2>&1
+
 python make_nums.py > nums.txt
-python karmarkarkarp.py nums.txt
-echo "--"
-echo "kk 36:"
+(time python karmarkarkarp.py nums.txt) > kk_data.txt 2>&1
+(time python r_rr.py nums.txt) > r_rr_data.txt 2>&1
+(time python r_hc.py nums.txt) > r_hc_data.txt 2>&1
+(time python r_sa.py nums.txt) > r_sa_data.txt 2>&1
+(time python pp_rr.py nums.txt) > pp_rr_data.txt 2>&1
+(time python pp_hc.py nums.txt) > pp_hc_data.txt 2>&1
+(time python pp_sa.py nums.txt) > pp_sa_data.txt 2>&1
+
 python make_nums.py > nums.txt
-python karmarkarkarp.py nums.txt
-echo "--"
-echo "kk 37:"
+(time python karmarkarkarp.py nums.txt) > kk_data.txt 2>&1
+(time python r_rr.py nums.txt) > r_rr_data.txt 2>&1
+(time python r_hc.py nums.txt) > r_hc_data.txt 2>&1
+(time python r_sa.py nums.txt) > r_sa_data.txt 2>&1
+(time python pp_rr.py nums.txt) > pp_rr_data.txt 2>&1
+(time python pp_hc.py nums.txt) > pp_hc_data.txt 2>&1
+(time python pp_sa.py nums.txt) > pp_sa_data.txt 2>&1
+
 python make_nums.py > nums.txt
-python karmarkarkarp.py nums.txt
-echo "--"
-echo "kk 38:"
+(time python karmarkarkarp.py nums.txt) > kk_data.txt 2>&1
+(time python r_rr.py nums.txt) > r_rr_data.txt 2>&1
+(time python r_hc.py nums.txt) > r_hc_data.txt 2>&1
+(time python r_sa.py nums.txt) > r_sa_data.txt 2>&1
+(time python pp_rr.py nums.txt) > pp_rr_data.txt 2>&1
+(time python pp_hc.py nums.txt) > pp_hc_data.txt 2>&1
+(time python pp_sa.py nums.txt) > pp_sa_data.txt 2>&1
+
 python make_nums.py > nums.txt
-python karmarkarkarp.py nums.txt
-echo "--"
-echo "kk 39:"
+(time python karmarkarkarp.py nums.txt) > kk_data.txt 2>&1
+(time python r_rr.py nums.txt) > r_rr_data.txt 2>&1
+(time python r_hc.py nums.txt) > r_hc_data.txt 2>&1
+(time python r_sa.py nums.txt) > r_sa_data.txt 2>&1
+(time python pp_rr.py nums.txt) > pp_rr_data.txt 2>&1
+(time python pp_hc.py nums.txt) > pp_hc_data.txt 2>&1
+(time python pp_sa.py nums.txt) > pp_sa_data.txt 2>&1
+
 python make_nums.py > nums.txt
-python karmarkarkarp.py nums.txt
-echo "--"
-echo "kk 40:"
+(time python karmarkarkarp.py nums.txt) > kk_data.txt 2>&1
+(time python r_rr.py nums.txt) > r_rr_data.txt 2>&1
+(time python r_hc.py nums.txt) > r_hc_data.txt 2>&1
+(time python r_sa.py nums.txt) > r_sa_data.txt 2>&1
+(time python pp_rr.py nums.txt) > pp_rr_data.txt 2>&1
+(time python pp_hc.py nums.txt) > pp_hc_data.txt 2>&1
+(time python pp_sa.py nums.txt) > pp_sa_data.txt 2>&1
+
 python make_nums.py > nums.txt
-python karmarkarkarp.py nums.txt
-echo "--"
-echo "kk 41:"
+(time python karmarkarkarp.py nums.txt) > kk_data.txt 2>&1
+(time python r_rr.py nums.txt) > r_rr_data.txt 2>&1
+(time python r_hc.py nums.txt) > r_hc_data.txt 2>&1
+(time python r_sa.py nums.txt) > r_sa_data.txt 2>&1
+(time python pp_rr.py nums.txt) > pp_rr_data.txt 2>&1
+(time python pp_hc.py nums.txt) > pp_hc_data.txt 2>&1
+(time python pp_sa.py nums.txt) > pp_sa_data.txt 2>&1
+
 python make_nums.py > nums.txt
-python karmarkarkarp.py nums.txt
-echo "--"
-echo "kk 42:"
+(time python karmarkarkarp.py nums.txt) > kk_data.txt 2>&1
+(time python r_rr.py nums.txt) > r_rr_data.txt 2>&1
+(time python r_hc.py nums.txt) > r_hc_data.txt 2>&1
+(time python r_sa.py nums.txt) > r_sa_data.txt 2>&1
+(time python pp_rr.py nums.txt) > pp_rr_data.txt 2>&1
+(time python pp_hc.py nums.txt) > pp_hc_data.txt 2>&1
+(time python pp_sa.py nums.txt) > pp_sa_data.txt 2>&1
+
 python make_nums.py > nums.txt
-python karmarkarkarp.py nums.txt
-echo "--"
-echo "kk 43:"
+(time python karmarkarkarp.py nums.txt) > kk_data.txt 2>&1
+(time python r_rr.py nums.txt) > r_rr_data.txt 2>&1
+(time python r_hc.py nums.txt) > r_hc_data.txt 2>&1
+(time python r_sa.py nums.txt) > r_sa_data.txt 2>&1
+(time python pp_rr.py nums.txt) > pp_rr_data.txt 2>&1
+(time python pp_hc.py nums.txt) > pp_hc_data.txt 2>&1
+(time python pp_sa.py nums.txt) > pp_sa_data.txt 2>&1
+
 python make_nums.py > nums.txt
-python karmarkarkarp.py nums.txt
-echo "--"
-echo "kk 44:"
+(time python karmarkarkarp.py nums.txt) > kk_data.txt 2>&1
+(time python r_rr.py nums.txt) > r_rr_data.txt 2>&1
+(time python r_hc.py nums.txt) > r_hc_data.txt 2>&1
+(time python r_sa.py nums.txt) > r_sa_data.txt 2>&1
+(time python pp_rr.py nums.txt) > pp_rr_data.txt 2>&1
+(time python pp_hc.py nums.txt) > pp_hc_data.txt 2>&1
+(time python pp_sa.py nums.txt) > pp_sa_data.txt 2>&1
+
 python make_nums.py > nums.txt
-python karmarkarkarp.py nums.txt
-echo "--"
-echo "kk 45:"
+(time python karmarkarkarp.py nums.txt) > kk_data.txt 2>&1
+(time python r_rr.py nums.txt) > r_rr_data.txt 2>&1
+(time python r_hc.py nums.txt) > r_hc_data.txt 2>&1
+(time python r_sa.py nums.txt) > r_sa_data.txt 2>&1
+(time python pp_rr.py nums.txt) > pp_rr_data.txt 2>&1
+(time python pp_hc.py nums.txt) > pp_hc_data.txt 2>&1
+(time python pp_sa.py nums.txt) > pp_sa_data.txt 2>&1
+
 python make_nums.py > nums.txt
-python karmarkarkarp.py nums.txt
-echo "--"
-echo "kk 46:"
+(time python karmarkarkarp.py nums.txt) > kk_data.txt 2>&1
+(time python r_rr.py nums.txt) > r_rr_data.txt 2>&1
+(time python r_hc.py nums.txt) > r_hc_data.txt 2>&1
+(time python r_sa.py nums.txt) > r_sa_data.txt 2>&1
+(time python pp_rr.py nums.txt) > pp_rr_data.txt 2>&1
+(time python pp_hc.py nums.txt) > pp_hc_data.txt 2>&1
+(time python pp_sa.py nums.txt) > pp_sa_data.txt 2>&1
+
 python make_nums.py > nums.txt
-python karmarkarkarp.py nums.txt
-echo "--"
-echo "kk 47:"
+(time python karmarkarkarp.py nums.txt) > kk_data.txt 2>&1
+(time python r_rr.py nums.txt) > r_rr_data.txt 2>&1
+(time python r_hc.py nums.txt) > r_hc_data.txt 2>&1
+(time python r_sa.py nums.txt) > r_sa_data.txt 2>&1
+(time python pp_rr.py nums.txt) > pp_rr_data.txt 2>&1
+(time python pp_hc.py nums.txt) > pp_hc_data.txt 2>&1
+(time python pp_sa.py nums.txt) > pp_sa_data.txt 2>&1
+
 python make_nums.py > nums.txt
-python karmarkarkarp.py nums.txt
-echo "--"
-echo "kk 48:"
+(time python karmarkarkarp.py nums.txt) > kk_data.txt 2>&1
+(time python r_rr.py nums.txt) > r_rr_data.txt 2>&1
+(time python r_hc.py nums.txt) > r_hc_data.txt 2>&1
+(time python r_sa.py nums.txt) > r_sa_data.txt 2>&1
+(time python pp_rr.py nums.txt) > pp_rr_data.txt 2>&1
+(time python pp_hc.py nums.txt) > pp_hc_data.txt 2>&1
+(time python pp_sa.py nums.txt) > pp_sa_data.txt 2>&1
+
 python make_nums.py > nums.txt
-python karmarkarkarp.py nums.txt
-echo "--"
-echo "kk 49:"
+(time python karmarkarkarp.py nums.txt) > kk_data.txt 2>&1
+(time python r_rr.py nums.txt) > r_rr_data.txt 2>&1
+(time python r_hc.py nums.txt) > r_hc_data.txt 2>&1
+(time python r_sa.py nums.txt) > r_sa_data.txt 2>&1
+(time python pp_rr.py nums.txt) > pp_rr_data.txt 2>&1
+(time python pp_hc.py nums.txt) > pp_hc_data.txt 2>&1
+(time python pp_sa.py nums.txt) > pp_sa_data.txt 2>&1
+
 python make_nums.py > nums.txt
-python karmarkarkarp.py nums.txt
-echo "--"
-echo "kk 50:"
+(time python karmarkarkarp.py nums.txt) > kk_data.txt 2>&1
+(time python r_rr.py nums.txt) > r_rr_data.txt 2>&1
+(time python r_hc.py nums.txt) > r_hc_data.txt 2>&1
+(time python r_sa.py nums.txt) > r_sa_data.txt 2>&1
+(time python pp_rr.py nums.txt) > pp_rr_data.txt 2>&1
+(time python pp_hc.py nums.txt) > pp_hc_data.txt 2>&1
+(time python pp_sa.py nums.txt) > pp_sa_data.txt 2>&1
+
 python make_nums.py > nums.txt
-python karmarkarkarp.py nums.txt
-echo "--"
+(time python karmarkarkarp.py nums.txt) > kk_data.txt 2>&1
+(time python r_rr.py nums.txt) > r_rr_data.txt 2>&1
+(time python r_hc.py nums.txt) > r_hc_data.txt 2>&1
+(time python r_sa.py nums.txt) > r_sa_data.txt 2>&1
+(time python pp_rr.py nums.txt) > pp_rr_data.txt 2>&1
+(time python pp_hc.py nums.txt) > pp_hc_data.txt 2>&1
+(time python pp_sa.py nums.txt) > pp_sa_data.txt 2>&1
+
