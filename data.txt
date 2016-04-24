@@ -1,0 +1,9 @@
+kk 1:
+The Karmarkar Karp value is: 15184
+The RANDOM repeated random value is: 298425510.
+The PP repeated random value is: 40.
+The RANDOM hill climbing value is: 511002824.
+The PP hill climbing value is: 834.
+The RANDOM simulated annealing value is: 255577968.
+The PP simulated annealing value is: 1308.
+--
