@@ -47,8 +47,10 @@ def rand_sa(numbers):
         if (np.random.random_integers(0,1) == 0):
             temp_plus_min[switch2] = -1 * temp_plus_min[switch2]
         temp_res = residue_calc(temp_plus_min, numbers)
-        if (temp_res < total_sa or random.random() < (math.exp(-((temp_res-total_sa)/t_iter(j))))):
+        if (temp_res < total_sa):
             total_sa = temp_res
+            plus_min_sa = temp_plus_min
+        elif (random.random() < (math.exp(-((temp_res-total_sa)/t_iter(j))))):
             plus_min_sa = temp_plus_min
     return total_sa
 
