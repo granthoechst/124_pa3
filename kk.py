@@ -169,8 +169,10 @@ def pp_sa(numbers):
             switch_content = np.random.random_integers(1,100)
         temp_pp_arr[switch_index] = (switch_index, switch_content)
         temp_sa = karmarkar_karp(apply_pp(temp_pp_arr, numbers))
-        if (temp_sa < curr_sa or random.random() < (math.exp(-((temp_sa-curr_sa)/t_iter(j))))):
+        if (temp_sa < curr_sa):
             curr_sa = temp_sa
+            curr_pp_arr = temp_pp_arr
+        elif (random.random() < (math.exp(-((temp_sa-curr_sa)/t_iter(j))))):
             curr_pp_arr = temp_pp_arr
     return curr_sa
 
